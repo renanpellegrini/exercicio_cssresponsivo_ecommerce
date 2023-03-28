@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: rgb(0, 81, 255);
+    color: #fff;
+    padding: 16px;
+    margin-bottom: 32px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sobre {
+    display: flex;
+    gap: 16px;
+}
+
+.sobre img {
+    max-width: 400px;
+}
+
+h2 {
+    margin-top: 32px;
+    margin-bottom: 12px;
+    color: rgb(0, 81, 255);
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 24px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.produto {
+    max-width: 100%;
+}
+
+.produto img {
+    max-width: 100%;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    column-gap: 2%;
+    row-gap: 5%;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.produto button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 6px;
+    background-color: rgb(0, 81, 255);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(0, 81, 255);
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .conteudo {
+        display: block;
+    }
+    
+    .sobre {
+        display: block;
+        gap: 16px;
+    }
+
+    .sobre img {
+        max-width: 100%;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .conteudo {
+        display: block;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .produtos {
+        display: block;
+        grid-template-columns: repeat(1, 90%);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+    
+    .sobre {
+        display: block;
+        gap: 16px;
+    }
+
+    .sobre img {
+        max-width: 100%;
+    }
+    
+}
